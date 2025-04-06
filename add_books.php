@@ -11,6 +11,7 @@ include 'config/db.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Books</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/script.js"></script>
 
     <style>
         
@@ -75,7 +76,7 @@ include 'config/db.php';
             </tr>
         </table>
 
-        <button type="submit" name="submit">Add Book</button>
+        <button type="submit" name="submit" onclick="showAlert()">Add Book</button>
     </form>
 
     <div class="message">

@@ -13,6 +13,7 @@ include 'config/db.php';
     <meta charset="UTF-8">
     <title>Issue Book</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/script.js"></script>
 
 
 </head>
@@ -79,7 +80,7 @@ if (isset($_POST["submit"])) {
         <label for="date">Return Date</label>
         <input type="date" id="date" name="date" required>
 
-        <button type="submit" name="submit1">Issue Book</button>
+        <button type="submit" name="submit1" onclick="showIssue()">Issue Book</button>
     </form>
 </div>
 

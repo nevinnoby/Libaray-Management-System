@@ -62,7 +62,7 @@ include 'config/db.php';
     <form method="post">
         <label for="student_id">Student ID</label>
         <input type="text" id="student_id" name="student_id" placeholder="Enter Student ID" required>
-        <button type="submit" name="fetch_books">Fetch Issued Books</button>
+        <button type="submit" name="fetch_books" >Fetch Issued Books</button>
     </form>
 </div>
 
