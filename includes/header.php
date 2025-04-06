@@ -13,8 +13,8 @@
             padding: 15px;
             text-align: center;
         }
-        main {
-            padding: 20px;
+        h1 {
+            color:rgb(49, 49, 49);
         }
     </style>
 </head>

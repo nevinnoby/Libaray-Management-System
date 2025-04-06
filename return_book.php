@@ -1,5 +1,10 @@
-<?php include 'config/db.php'; ?>
+<?php include 'includes/header.php'; ?>
 
+<?php include 'includes/navbar.php'; ?>
+
+<?php
+include 'config/db.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +14,7 @@
         body {
             font-family: 'Segoe UI', sans-serif;
             background-color: #f8f9fa;
-            padding: 50px;
+            
         }
         .container {
             background-color: #ffffff;
@@ -21,7 +26,7 @@
         }
         h2 {
             text-align: center;
-            color: #2196F3;
+            color:rgb(37, 187, 62);
             margin-bottom: 20px;
         }
         label {
@@ -39,21 +44,21 @@
             border-radius: 5px;
         }
         button {
-            background-color: #2196F3;
+            background-color:rgb(35, 145, 49);
             color: white;
             font-weight: bold;
             cursor: pointer;
             margin-top: 20px;
         }
         button:hover {
-            background-color: #1976D2;
+            background-color:rgb(15, 161, 15);
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h2>🔁 Return a Book</h2>
+    <h2>Return a Book</h2>
     <form method="post">
         <label for="student_id">Student ID</label>
         <input type="text" id="student_id" name="student_id" placeholder="Enter Student ID" required>

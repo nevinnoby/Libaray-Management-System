@@ -1,29 +1,22 @@
+<?php include 'includes/header.php'; ?>
+<?php include 'includes/navbar.php'; ?>
 <?php
 include 'config/db.php';
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Books</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+
     <style>
+        
         body {
             font-family: Arial, sans-serif;
-            padding: 20px;
             background-color: #f4f4f4;
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        form {
-            background-color: #ffffff;
-            padding: 20px;
-            max-width: 500px;
-            margin: 0 auto;
-            border: 1px solid #ddd;
         }
 
         table {
@@ -33,6 +26,9 @@ include 'config/db.php';
         th, td {
             padding: 10px;
             text-align: left;
+            background-color: white;
+            border: none;
+
         }
 
         input[type="text"], input[type="number"] {
@@ -59,12 +55,12 @@ include 'config/db.php';
         }
     </style>
 </head>
-<body>
+<body class="bod">
 
-    <h1>Add Books</h1>
+    <h1 class="h">Add Books</h1>
 
-    <form action="add_books.php" method="post">
-        <table>
+    <form action="add_books.php" method="post" class="for">
+        <table class="tab">
             <tr>
                 <th>Book Name</th>
                 <td><input type="text" id="name" name="name" placeholder="Enter Book Name" required></td>
@@ -118,3 +114,4 @@ include 'config/db.php';
 
 </body>
 </html>
+<?php include 'includes/footer.php'; ?>

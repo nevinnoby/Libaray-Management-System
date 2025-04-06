@@ -1,45 +1,20 @@
+<?php include 'includes/header.php'; ?>
+
+<?php include 'includes/navbar.php'; ?>
+
 <?php
 include 'config/db.php';
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>View Books & Issued Details</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            padding: 30px;
-            background-color: #f4f4f4;
-        }
-        h2 {
-            text-align: center;
-            margin-top: 40px;
-            color: #4CAF50;
-        }
-        table {
-            width: 90%;
-            margin: 20px auto;
-            border-collapse: collapse;
-            background-color: white;
-        }
-        th, td {
-            padding: 10px;
-            border: 1px solid #ddd;
-            text-align: center;
-        }
-        th {
-            background-color: #e0e0e0;
-        }
-        p {
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 
-<h2>📚 All Book Inventory</h2>
+<h2>📚 All Books</h2>
 
 <?php
 $sql = "SELECT b.book_id, b.title, b.author, b.available,
@@ -111,7 +86,7 @@ if ($res_issued && mysqli_num_rows($res_issued) > 0) {
 }
 ?>
 
-<h2>⏰ Students with Due Books (Past Return Date)</h2>
+<h2>⏰ Students with Dues</h2>
 
 <?php
 $today = date("Y-m-d");
